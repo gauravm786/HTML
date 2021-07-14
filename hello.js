@@ -367,3 +367,81 @@
 //colspan="2" means that given column will acquire space of two columns
 //rowpan="2" means that given row will acquire space of two rows
 //br tag is used to split data into multiple lines 
+
+//19 june 2021
+
+/*
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table,th, td{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            td{
+                padding: 15px;
+            }
+            table{
+                width: 100%;
+            }
+            th,td{
+                text-align: center;
+            }
+        </style>
+        <title> Welcome page</title>
+    </head>
+    <body>
+    <table>
+        <tr>
+            <th colspan="2">Name</th>
+           
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Gaurav</td>
+            <td>Mishra</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Harsh</td>
+            <td>Mishra</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>Yash</td>
+            <td>Patole</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Aditya</td>
+            <td>Jadhav</td>
+            <td>19</td>
+        </tr>
+    </table> 
+    <br> <br> <br> <br>
+    <table>
+        <tr>
+            <th>FirstName</th>
+             <td>Gaurav</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Name</th>
+            <td>Harsh</td>
+          
+        </tr>
+        <tr>
+            <td>Mishra</td>
+        </tr>
+       
+    </table> 
+    <div style="border: 1px solid green;">
+        Hello div-1<br>Hello div-1<br>Hello div-1
+    </div>
+    <div style="border: 1px solid blue;font-size: larger;">
+        Hello div-2<br>Hello div-2<br>Hello div-2
+    </div>
+    </body>
+</html>
+
+*/

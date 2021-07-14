@@ -371,3 +371,411 @@
 //br tag is used to split data into multiple lines 
 
 //13 june 2021 end
+
+
+//19 june 2021
+
+
+//1.unclosed tag :- <br>,<img>
+
+//2.Meta tag :- <title></title>,<meta></meta>,<style></style>
+
+//3.Text tag :- <p></p>,<h1>....<h6>........</h1>....</h6> (make your data look in different size),<strong></strong>(makes your data bold)
+
+//4.Linked tag:- <a href=" "></a>,<base></base>
+
+//5.Image tag:- <img src=" "></img>,<map></map>,<area>,</area>
+
+//6.Form tag:- <style></style>,<script></script>
+//Form is the only element inside html using what you can take input from the user or you can show backend input to the user and javascript is also use in html
+
+//7.div tag:-The <div> tag defines a division or a section in an HTML document.
+//The <div> tag is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript.
+//The <div> tag is easily styled by using the class or id attribute.
+//Any sort of content can be put inside the <div> tag! 
+//div is used to make changes at any part of html code and it must be used with css 
+//Global Attributes
+//The <div> tag also supports the Global Attributes in HTML.
+//Event Attributes
+//The <div> tag also supports the Event Attributes in HTML.
+
+//hello.html
+
+/*1.
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table,th, td{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            td{
+                padding: 15px;
+            }
+            table{
+                width: 100%;
+            }
+            th,td{
+                text-align: center;
+            }
+        </style>
+        <title> Welcome page</title>
+    </head>
+    <body>
+    <table>
+        <tr>
+            <th colspan="2">Name</th>
+           
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Gaurav</td>
+            <td>Mishra</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Harsh</td>
+            <td>Mishra</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>Yash</td>
+            <td>Patole</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Aditya</td>
+            <td>Jadhav</td>
+            <td>19</td>
+        </tr>
+    </table> 
+    <br> <br> <br> <br>
+    <table>
+        <tr>
+            <th>FirstName</th>
+             <td>Gaurav</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Name</th>
+            <td>Harsh</td>
+          
+        </tr>
+        <tr>
+            <td>Mishra</td>
+        </tr>
+       
+    </table> 
+    <div style="border: 1px solid green;">
+        Hello div-1<br>Hello div-1<br>Hello div-1
+    </div>
+    <div style="border: 1px solid blue;font-size: larger;">
+        Hello div-2<br>Hello div-2<br>Hello div-2
+    </div>
+    </body>
+</html>
+*/
+
+//form.html
+
+/*1.
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Login Form
+        </title>
+    </head>
+    <body>
+        <div>
+            <h3>Please Login</h3>
+            <form method="get">
+                <table>
+                    <tr>
+                        <td>Email:</td>  
+                    </tr>
+                    <tr>
+                        <td>Password</td>  
+                    </tr>
+                    <tr>
+                          <td>Login</td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
+*/
+
+/*2.
+<!DOCTYPE html>    
+<html>
+    <body>
+        <div>
+            <h3>Please Login</h3>
+            <form method="get">
+                <table>
+                    <tr>
+                        <td>Email:</td>  <td> <input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>  <td> <input type="password" name="password"></td>
+                    </tr>
+                    <tr>
+                          <td> <input type="submit" value="Login"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
+*/
+
+//here,
+//input tag:- input tag is used to take input from user.input shpould not be used with closing tag as it is a single tag
+//input can be text and it can be clickevent as well
+//input type is how we want input(e.g:-submit,button,etc) and value is the name assigned to type of input we want(e.g:-submit,button,etc)
+
+/*3.
+
+<!DOCTYPE html>    
+<html>
+    <body>
+        <div>
+            <h3>Please Login</h3>
+            <form method="get">
+                <table>
+                    <tr>
+                        <td>Email:</td>  <td> <input value="gauravm.103@gmail.com" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>  <td> <input value="gaurav786" name="password"></td>
+                    </tr>
+                    <tr>
+                          <td> <input type="submit" value="Login"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
+*/
+
+//here,
+//input value is used to make default data
+
+/*4.using form method
+<!DOCTYPE html>    
+<html>
+    <body>
+        <div>
+            <h3>Please Login</h3>
+            <form method="get">
+                <table>
+                    <tr>
+                        <td>Email:</td>  <td> <input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>  <td> <input type="password" name="password"></td>
+                    </tr>
+                    <tr>
+                          <td> <input type="submit" value="Login"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
+*/
+
+
+/*5.
+<!DOCTYPE html>    
+<html>
+    <head>
+        <style>
+            .loginform
+            {
+                padding: 10px;
+                border: 1px solid red;
+                border-radius: 10px;
+                width: 300px;
+                margin-top: 10px;
+            }
+            
+        </style>
+        <title>Login Form</title>
+    </head>
+    <body>
+        <div class="loginform">
+            <h3>Please Login</h3>
+            <form method="get">
+                <table>
+                    <tr>
+                        <td>Email:</td>  <td> <input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>  <td> <input type="password" name="password"></td>
+                    </tr>
+                    <tr>
+                          <td> <input type="submit" value="Login"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
+-->
+*/
+
+/*
+<!--6.
+<!DOCTYPE html>    
+<html>
+    <head>
+        <style>
+            .loginform
+            {
+                padding: 10px;
+                border: 1px solid red;
+                border-radius: 10px;
+                width: 300px;
+                margin-top: 10px;
+            }
+              
+            .formheading
+            {
+                background-color: red;
+                color: white;
+                padding: 4px;
+                text-align: center;
+            }
+        </style>
+        <title>Login Form</title>
+    </head>
+    <body>
+        <div class="loginform">
+            <h3 class="formheading">Please Login</h3>
+            <form method="get">
+                <table>
+                    <tr>
+                        <td>Email:</td>  <td> <input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>  <td> <input type="password" name="password"></td>
+                    </tr>
+                    <tr>
+                          <td> <input type="submit" value="Login"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
+-->
+*/
+
+/*7.
+<!DOCTYPE html>    
+<html>
+    <head>
+        <style>
+            .loginform
+            {
+                padding: 10px;
+                border: 1px solid red;
+                border-radius: 10px;
+                width: 300px;
+                margin-top: 10px;
+            }
+            
+            .formheading
+            {
+                background-color: red;
+                color: white;
+                padding: 4px;
+                text-align: center;
+            }
+            
+            .sub
+            {
+                background-color: red;
+                padding: 7px 40px 7px 40px;
+                color: white;
+                font-weight: bold;
+                margin-left: 70px;
+                margin-right: 5px;
+            }
+        </style>
+        <title>Login Form</title>
+    </head>
+    <body>
+        <div class="loginform">
+            <h3 class="formheading">Please Login</h3>
+            <form method="get">
+                <table>
+                    <tr>
+                        <td>Email:</td>  <td> <input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>  <td> <input type="password" name="password"></td>
+                    </tr>
+                    <tr>
+                          <td colspan="2" style="text-align:center"> <input class="sub" type="submit" value="Login"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
+*/
+//19 june 2021 end
+
+//20 june 2021
+
+//list.html
+
+/*
+    ordered list:-<ol></ol>
+    unordered list:-<ul></ul>
+    definition list:-<dl></dl>
+    <li></li> tag defines list item
+*/
+
+/*
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <ol>
+                <li>Gaurav</li>
+                <li>Rajendra</li>
+                <li>Mishra</li>
+            </ol>
+            <ul>
+                <li>Harsh</li>
+                <li>Rajendra</li>
+                <li>Mishra</li>
+            </ul>
+            </body>
+    </head>
+</html>
+*/
+
+//divLayout.html
+
+/*
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>A Good layout</title>
+    </head>
+    <body>
+        <div style="width: 1000px; height:100px; background-color:aqua;color:red;">This is a Banner</div>
+        <div style="width: 200px; height:400px;background-color:green;color:black;float:left">Left Div</div>
+        <div style="width: 800px; height:400px;background-color:orange;color:black;float:left;">Right Div</div>
+        <div style="width: 800px; height:400px;background-color:red;color:black;float: left;">Footer Div</div>
+</html>
+*/
+
+//20 june 2021 end
