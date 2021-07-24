@@ -779,3 +779,5 @@
 */
 
 //20 june 2021 end
+
+//shift+I and Enter will get the whole elements of html
